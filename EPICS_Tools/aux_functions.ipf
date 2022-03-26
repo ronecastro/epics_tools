@@ -49,3 +49,20 @@ Function/T readcfg(section, key)
 	return file
     
 End
+
+Function UpdateVariables()
+	SVAR/Z gGetAllPVsURL = root:GlobalVariables:gGetAllPVsURL
+	SVAR/Z gPVsfile = root:GlobalVariables:gPVsfile
+	SVAR/Z gArchiverURLaffix0 = root:GlobalVariables:gArchiverURLaffix0
+	SVAR/Z gArchiverURLaffix1 = root:GlobalVariables:gArchiverURLaffix1
+	SVAR/Z gArchiverURLaffix2 = root:GlobalVariables:gArchiverURLaffix2
+	SVAR/Z gArchiverURLaffix3 = root:GlobalVariables:gArchiverURLaffix3
+	
+	gGetAllPVsURL = readcfg("GetAllPVsURL","gGetAllPVsURL")
+	gPVsfile = readcfg("Path","gPVsFile")
+	gArchiverURLaffix0 = readcfg("ArchiverURL","affix0")
+	gArchiverURLaffix1 = readcfg("ArchiverURL","affix1")
+	gArchiverURLaffix2 = readcfg("ArchiverURL","affix2")
+	gArchiverURLaffix3 = readcfg("ArchiverURL","affix3")
+	
+End
