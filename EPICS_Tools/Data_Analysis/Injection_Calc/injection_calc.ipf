@@ -19,5 +19,4 @@ Function avg() //primeiro uso os cursores para selecionar o intervalo, então us
 	wv_avg = wv_sum/wv_pnts //divido pelo total de pontos (média simples)
 	print "Média para o Intervalo:", wv_avg
 
-	
 End

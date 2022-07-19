@@ -1,7 +1,6 @@
 #pragma TextEncoding = "UTF-8"
 #pragma rtGlobals=3		// Use modern global access method and strict wave access.
 
-
 Function OpenPDG_Comp()
 	DoWindow/F PreDefinedGroups_Comp
 	if (V_Flag == 1)
